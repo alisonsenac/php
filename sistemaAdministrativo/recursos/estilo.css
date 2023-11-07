@@ -1,0 +1,73 @@
+.painel{
+    width: 500px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 100;
+}
+.login{
+    text-align: center;
+    color: rgb(0, 17, 255);
+}
+.usuario{
+    font-size: 100px;
+    padding-left: 180px;
+    text-shadow: 2px 2px 10px rgb(0,8,255);
+}
+.menu{
+    background-color: #004c94;
+    min-width: 250px;
+    color: white;
+    height: 100vh;
+    list-style: none;
+}
+
+/*faça o menu desaparecer no cewlular */
+@media (max-widh:768){
+    .menu{                  /*largura maxima de 768px */
+        display: none;      /*se a tela for abaixo de 768px, desaparece o menu, com display none*/
+    }
+}
+
+.item{
+    display: block;               /*itens comportam-se como blocos*/
+    padding: 10px  20px;          /*espaçamento interno lateral(10px) e acima (20px)*/
+    text-decoration: none ;       /*tirar decoração*/
+    font-style: none;
+    color:rgb(243, 117, 14);
+    border: 1px solid white;    /*borda branca*/
+    border-radius: 10px;
+    margin-left: -50px;           /*espaçamento externo esquerdo*/
+    margin-top: 10px;             /*espaçamento externo acima*/
+}
+.item:hover{
+    background-color: black;    /*cor de fundo do item*/
+    transition: 1s;               /*tempo de animação*/
+    text-decoration: none;        /*tira a decoração das letras*/
+    box-shadow: 1px 1px 10px black;
+}
+
+ul{
+    list-style: none;
+
+}
+
+.cartao{
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cartao:hover{
+    background-color: rgba(197, 190, 190, 0.945);
+    transition: 1s;
+}
